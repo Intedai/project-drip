@@ -6,8 +6,31 @@ a, button{
   cursor: url("../images/cursor/pointer.png"), default !important;
 }
 
+.pixelated-img {
+  image-rendering: pixelated;
+}
 .main-window {
   height: 100vh;
+}
+
+.browser-bar-button {
+  box-shadow: none !important;
+  border-radius: 50%;
+  font-weight: bold;
+  color: white !important;
+  background: linear-gradient(#c9c9c9, #969696, #8f8f8f, #969696,#c9c9c9) !important;
+  border: 2px solid #8f8f8f;
+}
+
+.browser-bar{
+  display: flex;
+  margin-left: 20px;
+  gap: 40px;
+  padding: 0px;
+}
+
+.title-bar {
+  padding: 0px;
 }
 
 .title-bar-btn {
@@ -24,7 +47,7 @@ a, button{
 }
 
 /* From https://www.w3schools.com/howto/howto_css_disable_text_selection.asp */
-header a {
+header a, img {
   /* Safari */
   -webkit-user-select: none;
   /* IE 10 and IE 11 */
